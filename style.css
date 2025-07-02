@@ -1,59 +1,47 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #000000; /* zwart - alternatief: #000428 voor donkerblauw */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #000;
   height: 100vh;
   overflow: hidden;
   font-family: 'VT323', monospace;
   font-size: 1.5rem;
-  color: #00ff00; /* retro computergroen */
+  color: #00ff00;
+  position: relative;
 }
 
 .container {
   text-align: center;
-  max-width: 900px;
-  padding: 20px;
+  padding: 60px 20px 20px;
+  max-width: 800px;
+  margin: auto;
 }
 
 h1 {
   font-family: 'Press Start 2P', cursive;
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
-  color: #00ff00;
+  margin-bottom: 1.5rem;
 }
 
 .intro {
-  margin-bottom: 2rem;
   color: #00ff00;
 }
 
-.bouncy-button {
-  display: inline-block;
+.crazy-button {
+  position: absolute;
   padding: 1rem 2rem;
-  font-size: 1.5rem;
   background-color: transparent;
   color: #00ff00;
-  text-decoration: none;
   border: 2px solid #00ff00;
+  font-size: 1.2rem;
+  font-family: 'Press Start 2P', cursive;
   border-radius: 8px;
-  animation: bounce 2s infinite;
-  position: relative;
+  text-decoration: none;
+  z-index: 10;
+  transition: background 0.3s;
 }
 
-.bouncy-button:hover {
+.crazy-button:hover {
   background-color: #003300;
 }
-
-@keyframes bounce {
-  0%   { transform: translateY(0) rotate(0deg); }
-  20%  { transform: translateY(-30px) rotate(5deg); }
-  40%  { transform: translateY(0) rotate(-5deg); }
-  60%  { transform: translateY(-15px) rotate(3deg); }
-  80%  { transform: translateY(0px) rotate(-3deg); }
-  100% { transform: translateY(-4px) rotate(1deg); }
-}
-
