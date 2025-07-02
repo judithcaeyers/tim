@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Meer info – Tim</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      background-color: #000;
+      color: #00ff00;
+      font-family: 'VT323', monospace;
+    }
+
+    h1 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 1.2rem;
+      text-align: center;
+      margin-bottom: 60px;
+      color: #00ff00;
+    }
+
+    .info-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .info-box {
+      border: 2px solid #00ff00;
+      padding: 40px;
+      width: 200px;
+      height: 200px;
+      text-align: center;
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s;
+    }
+
+    .info-box:hover {
+      background-color: #003300;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Oh wow, je bent er geraakt.</h1>
+
+  <div class="info-container">
+    <div class="info-box">Over mij</div>
+    <div class="info-box">Mijn werk</div>
+    <div class="info-box">Opkomende projecten</div>
+    <div class="info-box">Contact</div>
+  </div>
+</body>
+</html>
 
